@@ -37,6 +37,7 @@
         "*.asmdef",
         "*.xml",
         "Documentation",
+        "Editor",
         "Runtime"
     ]
 }
