@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.0.1...v1.0.2) (2019-11-06)
+
+#### Bug Fixes
+
+* **Editor:** add asmdef file for editor scripts ([594bd5c](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/594bd5cf7322173c213047e56ffdfb4d0b78c384))
+  > The Editor scripts were not being executed when the package was used due to no asmdef being present to load in the scripts. This has now been added.
+
 ### [1.0.1](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.0.0...v1.0.1) (2019-11-06)
 
 #### Bug Fixes
