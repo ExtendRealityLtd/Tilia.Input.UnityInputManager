@@ -531,7 +531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4933412265285294678}
   m_Layer: 0
-  m_Name: Input.UnityInputManager.WindowsMixedReality.LeftController 1
+  m_Name: Input.UnityInputManager.Oculus.TouchLeftController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

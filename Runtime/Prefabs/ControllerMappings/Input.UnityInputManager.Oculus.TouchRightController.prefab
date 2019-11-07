@@ -163,7 +163,7 @@ MonoBehaviour:
     m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   equalityTolerance: 1e-45
-  axisName: Tilia.Input.UnityInputManager_Axis15
+  axisName: Tilia.Input.UnityInputManager_Axis5
   multiplier: 1
 --- !u!114 &5643188553823536100
 MonoBehaviour:
@@ -934,7 +934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3857693711571079995}
   m_Layer: 0
-  m_Name: Input.UnityInputManager.Oculus.RightTouchController
+  m_Name: Input.UnityInputManager.Oculus.TouchRightController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
