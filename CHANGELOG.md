@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.0.3](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.0.2...v1.0.3) (2019-11-07)
+
+#### Bug Fixes
+
+* **HowToGuides:** provide correct package name in installation guide ([dcc6ae2](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/dcc6ae28c6f75529ae548b6d65825628adf3cb03))
+  > The package name does not include dots and therefore should be written without any dot separators.
+* **Prefabs:** provide correct axis number for oculus controller ([09cd8d6](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/09cd8d637e47f749b9ac91e1d88b89483815cd6e))
+  > The axis number used on the Oculus Controller was incorrect and therefore causing the incorrect output when a different part of the controller was interacted with. This has now been rectified.
+
 ### [1.0.2](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.0.1...v1.0.2) (2019-11-06)
 
 #### Bug Fixes
