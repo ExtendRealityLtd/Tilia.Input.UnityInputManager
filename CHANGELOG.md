@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.0.5...v1.1.0) (2019-11-28)
+
+#### Features
+
+* **HowToGuides:** add guide for proxy actions ([a46ae44](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/a46ae44b31d1dfe31273adaea6d5daefc5130bee))
+  > added a guide for showing how to link actions together.
+
 ### [1.0.5](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.0.4...v1.0.5) (2019-11-27)
 
 #### Miscellaneous Chores

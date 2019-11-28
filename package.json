@@ -2,7 +2,7 @@
     "name": "io.extendreality.tilia.input.unityinputmanager",
     "displayName": "Tilia Input UnityInputManager",
     "description": "Input wrappers for the Unity Input Manager and a collection of common input prefabs.",
-    "version": "1.0.5",
+    "version": "1.1.0",
     "unity": "2018.3",
     "unityRelease": "10f1",
     "keywords": [
