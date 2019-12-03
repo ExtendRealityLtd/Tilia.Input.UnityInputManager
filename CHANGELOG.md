@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.2](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.1.1...v1.1.2) (2019-12-03)
+
+#### Bug Fixes
+
+* **HowToGuides:** add missing step to proxy action doc ([d849223](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/d849223011776fa70ca1dc1d45406ca6688392c8))
+  > there was a part of step 2 missing from the document that didnt show the function that needed to be selected. a couple of the images were tidied up so that they didnt look as stretched.
+
 ### [1.1.1](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.1.0...v1.1.1) (2019-12-02)
 
 #### Miscellaneous Chores
