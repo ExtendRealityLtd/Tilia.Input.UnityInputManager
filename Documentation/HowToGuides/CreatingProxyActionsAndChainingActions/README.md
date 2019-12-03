@@ -33,6 +33,10 @@ Click the `+` symbol in the bottom right corner of the `Activated` event paramet
 
 ![Creating The Boolean](assets/images/CreatingTheBoolean.png)
 
+Select a `Function` to perform when the `Activated` event is emitted. For this example, select `GameObject -> SetActive(bool)` (be sure not to select `Dynamic bool - SetActive` for this example).
+
+![Set Activated Listener To Game Object SetActive Action](assets/images/SetActivatedListenerToGameObjectSetActiveAction.png)
+
 ### Step 3
 
 Do the same as Step 2 but for the `Deactivated` event parameter in the `Boolean Action` component, but tick the checkbox under the `GameObject.SetActive` function.
