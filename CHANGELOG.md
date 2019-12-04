@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.1.2...v1.2.0) (2019-12-04)
+
+#### Features
+
+* **HowToGuides:** show how to convert float action to boolean action ([63c1370](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/63c137054636c5956052bb9bf7169a03dfb8e08b))
+  > showing how to convert float action to boolean action
+
 ### [1.1.2](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.1.1...v1.1.2) (2019-12-03)
 
 #### Bug Fixes
