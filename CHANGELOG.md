@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.1](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.2.0...v1.2.1) (2019-12-31)
+
+#### Bug Fixes
+
+* **FodyWeavers.xml:** move configuration to root directory ([cb1a731](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/cb1a73130e213c5e3a6d0f2b8bf70b5acb730778))
+  > If there is more than one source directory then the FodyWeavers.xml configuration file should be in the root of the directory so multiple configuration files aren't required for each sources directory.
+
 ## [1.2.0](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.1.2...v1.2.0) (2019-12-04)
 
 #### Features
