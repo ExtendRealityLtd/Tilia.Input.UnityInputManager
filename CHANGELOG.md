@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.2.5](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.2.4...v1.2.5) (2020-03-05)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.zinnia.unity from 1.13.0 to 1.14.0 ([3776810](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/3776810bcf51e5e8ac5f17dd7e4edc3ad85d1b3a))
+  > Bumps [io.extendreality.zinnia.unity](https://github.com/ExtendRealityLtd/Zinnia.Unity) from 1.13.0 to 1.14.0. - [Release notes](https://github.com/ExtendRealityLtd/Zinnia.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Zinnia.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Zinnia.Unity/compare/v1.13.0...v1.14.0)
+  > 
+  > Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
 ### [1.2.4](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.2.3...v1.2.4) (2020-03-03)
 
 #### Miscellaneous Chores
