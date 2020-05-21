@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.9](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.2.8...v1.2.9) (2020-05-21)
+
+#### Bug Fixes
+
+* **AxisCreator:** invert the right controller vertical axis ([63c036a](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/63c036ad946d0b85c19629e18120349efcfafe0c))
+  > The Unity Axis5 data which is used for the right controller touchpad/thumbstick vertical axis needs to be inverted otherwise up gives a negative number which is opposite from the left controller which gives up a positive number.
+
 ### [1.2.8](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.2.7...v1.2.8) (2020-04-21)
 
 #### Miscellaneous Chores
