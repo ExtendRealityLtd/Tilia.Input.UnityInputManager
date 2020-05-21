@@ -46,7 +46,7 @@
 
         private static readonly InputAxis axis3 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis3", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 3, joyNum = 0 };
         private static readonly InputAxis axis4 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis4", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 4, joyNum = 0 };
-        private static readonly InputAxis axis5 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis5", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 5, joyNum = 0 };
+        private static readonly InputAxis axis5 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis5", dead = 0.001f, sensitivity = 1f, snap = true, invert = true, type = AxisType.JoystickAxis, axis = 5, joyNum = 0 };
         private static readonly InputAxis axis6 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis6", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 6, joyNum = 0 };
         private static readonly InputAxis axis7 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis7", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 7, joyNum = 0 };
         private static readonly InputAxis axis8 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis8", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 8, joyNum = 0 };
