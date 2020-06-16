@@ -16,7 +16,7 @@ Following on from the scene created in [Using The Unity Button Action], we’re 
 
 ### Prerequistes 
 
-* A Unity Button Action exists in the scene. See [Using The Unity Button Action].
+* [Add the Tilia.Input.UnityInputManager.ButtonAction] prefab to the scene Hierarchy.
 
 ## Let's Start
 
@@ -39,7 +39,7 @@ Select a `Function` to perform when the `Activated` event is emitted. For this e
 
 ### Step 3
 
-Do the same as Step 2 but for the `Deactivated` event parameter in the `Boolean Action` component, but tick the checkbox under the `GameObject.SetActive` function.
+Do the same as [Step 2] but for the `Deactivated` event parameter in the `Boolean Action` component, but tick the checkbox under the `GameObject.SetActive` function.
 
 ![Deactivating The Boolean](assets/images/DeactivatingTheBoolean.png)
 
@@ -51,7 +51,9 @@ We could hook up the `Unity Input Manager Button Action` `Value Changed` event t
 
 The `Sources` parameter allows us to specify other Actions for our `BooleanAction` to monitor changes on and re-emit any events that happen on those source actions.
 
-Expand the `Sources` parameter and enter the desired number of other Actions to monitor in the `Size` parameter field. In this example, we want to watch two other Actions (the `Input.UnityInputManager.ButtonAction` and the `Input.UnityInputManager.XboxController -> Input Actions -> ButtonA_Press[0]`) so enter `2` into the Sizes parameter field.
+Expand the `Sources` parameter and enter the desired number of other Actions to monitor in the `Size` parameter field. In this example, we want to watch two other Actions (the `Input.UnityInputManager.ButtonAction` and the `Input.UnityInputManager.XboxController -> Input Actions -> ButtonA_Press[0]`) so enter `2` into the `Size` parameter field.
+
+> The size property will be `0` by default, so change it to `2`.
 
 ![Update Sources Parameter On Boolean Action](assets/images/UpdateSourcesParameterOnBooleanAction.png)
 
@@ -86,4 +88,5 @@ This ability to create a Proxy Action and then chain other Actions makes it poss
 Play the Unity scene and you will be able to press the Space Key to make the `Floor` GameObject disappear or you can press the Xbox Controller Button A to also make the `Floor` GameObject disappear.
 
 [Zinnia]: https://github.com/ExtendRealityLtd/Zinnia.Unity
-[Using The Unity Button Action]: ../UsingTheUnityButtonAction/README.md
+[Add the Tilia.Input.UnityInputManager.ButtonAction]: ../UsingTheUnityButtonAction/README.md
+[Step 2]: #Step-2
