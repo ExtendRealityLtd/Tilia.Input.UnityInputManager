@@ -10,9 +10,9 @@
 
 Sometimes you may want to use the values from a `FloatAction` to activate or deactivate an action type. For example, pressing down the trigger axis on a controller causes an action to occur when the trigger is fully pressed down.
 
-The `Input Unity Input Manager Axis Actions` provide a way of getting the varying value data from an axis but don’t really provide a way of letting us trigger something when that value reaches a specific value. This can be done by taking the float value and converting it into a boolean when the float value is within our specified bounds. We can then take this boolean value and pass it into a `Boolean Action` for hooking up events that are either on or off (true/false).
+The Input Unity Input Manager Axis Actions provide a way of getting the varying value data from an axis but don’t really provide a way of letting us trigger something when that value reaches a specific value. This can be done by taking the float value and converting it into a boolean when the float value is within our specified bounds. We can then take this boolean value and pass it into a `Boolean Action` for hooking up events that are either on or off (true/false).
 
-We can do this using the Data Type Converters provided with [Zinnia.Unity] which allow conversions from one DataType to another.
+We can do this using the Data Type Converters provided with [Zinnia] which allow conversions from one DataType to another.
 
 ## Prerequisites
 
@@ -60,7 +60,7 @@ Select a `Function` to perform when the `Activated` event is emitted. For this e
 
 ### Step 6
 
-Do the same as Step 5 but for the `Deactivated` event parameter in the Boolean Action component, but tick the checkbox under the `GameObject.SetActive` function.
+Do the same as [Step 5] but for the `Deactivated` event parameter in the `Boolean Action` component, but tick the checkbox under the `GameObject.SetActive` function.
 
 ![Set Deactivated Listener To Game Object SetActive Action](assets/images/SetDeactivatedListenerToGameObjectSetActiveAction.png)
 
@@ -82,7 +82,7 @@ Select a `Function` to perform when the `Transformed` event is emitted. For this
 
 ### Step 9
 
-Set the `Positive Bounds` values to `0.5` and `1` on the `Float To Boolean` component.
+Select the `GameObject` GameObject from the Unity Hierarchy and on the `Float To Boolean` component change the `Positive Bounds -> Min` value to `0.5` and the `Positive Bounds -> Max` value to `1`.
 
 ![Set Positive Bounds Values On Float To Boolean](assets/images/SetPositiveBoundsValuesOnFloatToBoolean.png)
 
@@ -98,7 +98,9 @@ Select a `Function` to perform when the `Value Changed` event is emitted. For th
 
 ### Done
 
-Play the Unity scene and press the Left Trigger axis on the Xbox Controller and notice how the Cube will disappear when the axis passes half way. This Boolean Action can now be used to drive other output events too such as grabbing an item or even activating a pointer.
+Play the Unity scene and press the Left Trigger axis on the Xbox Controller and notice how the Cube will disappear when the axis passes half way. This `Boolean Action` can now be used to drive other output events too such as grabbing an item or even activating a pointer.
 
+[Zinnia]: https://github.com/ExtendRealityLtd/Zinnia.Unity
 [Install the Tilia.Input.UnityInputManager]: ../Installation/README.md
 [Unity]: https://unity3d.com/
+[Step 5]: #Step-5

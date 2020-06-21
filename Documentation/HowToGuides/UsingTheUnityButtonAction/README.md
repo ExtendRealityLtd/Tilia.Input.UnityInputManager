@@ -12,8 +12,6 @@ Unity Button Actions utilize the [Unity Input Manager] framework and emit events
 
 A Unity Button Action is derived from a [Zinnia] Action and therefore can be injected into any component that accepts a Zinnia Action.
 
-The `Tilia.Input.UnityInputManager` package comes with a prefab Action that wraps the required components to make using a `UnityInputManager.ButtonAction` much easier.
-
 ## Prerequisites
 
 * [Install the Tilia.Input.UnityInputManager] package dependency in to your [Unity] project.
@@ -47,12 +45,13 @@ Select the `Input.UnityInputManager.ButtonAction` GameObject in the Hierarchy wi
 
 ### Step 4
 
-The `Unity Input Manager Button Action` component has 4 events that can be hooked into: 
+The `Unity Input Manager Button Action` component has 5 events that can be hooked into: 
 
-* Activation State Changed: Emitted when the activation state of the action changes from the previous state.
-* Activated: Emitted when the button is pressed down.
-* Value Changed: Emitted when the state of the button value changes, e.g. goes from being pressed down to being released.
-* Deactivated: Emitted when the button is released and no longer pressed down.
+* `Activation State Changed` is emitted when the activation state of the action changes from the previous state.
+* `Activated` is emitted when the button is pressed down.
+* `Value Changed` is emitted when the state of the button value changes, e.g. goes from being pressed down to being released.
+* `Value Unchanged` is emitted when the state of the button value hasn't changed from the previous time the action was called.
+* `Deactivated` emitted when the button is released and no longer pressed down.
 
 For an example of how to hook these events into doing something, let's make the `Floor` GameObject disappear when the Spacebar is pressed and then have it reappear when the Spacebar is released.
 
@@ -88,7 +87,7 @@ Select the `Input.UnityInputManager.XboxController -> InputActions -> ButtonA_Pr
 
 > The `Key Code` parameter on the `Unity Input Manager Button Action` component is set to `Joystick Button 0` which is the Unity Input Manager mapping for the Xbox controller A Button.
 
-Follow [Step 4] and [Step 5] but applied on the `Unity Input Manager Button Action` component related to `ButtonA_Press[0]` to add the relevant actions to happen on the Activated event and Deactivated event for when an Xbox Controller Button A is pressed down and released.
+Follow [Step 4] and [Step 5] but applied on the `Unity Input Manager Button Action` component related to the `ButtonA_Press[0]` GameObject to add the relevant actions to happen on the `Activated` event and `Deactivated` event for when an Xbox Controller Button A is pressed down and released.
 
 ![Set Actions For Xbox Controller Button A](assets/images/SetActionsForXboxControllerButtonA.png)
 

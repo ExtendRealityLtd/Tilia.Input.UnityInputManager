@@ -10,12 +10,10 @@
 
 Unity Input Manager Axis Actions tie into the [Unity Input Manager] and emit events when a defined input axis changes value. There are two kinds of Unity Axis Action:
 
-* UnityInputManager.1DAxisAction: listens for changes on a single axis and emits a `float` value for the axis changes.
-* UnityInputManager.2DAxisAction: listens for changes on a two axes and emits a `Vector2` value combining both axis changes.
+* `UnityInputManager.1DAxisAction` listens for changes on a single axis and emits a `float` value for the axis changes.
+* `UnityInputManager.2DAxisAction` listens for changes on a two axes and emits a `Vector2` value combining both axis changes.
 
 A Unity Axis Action is derived from a [Zinnia] Action and therefore can be injected into any component that accepts a Zinnia Action.
-
-The `Tilia.Input.UnityInputManager` package comes with a prefab Action that wraps the required components to make using a `UnityInputManager.1DAxisAction` much easier.
 
 ## Prerequisites
 
@@ -79,6 +77,8 @@ Add the `PositionUpdater` scrip to the `Sphere` GameObject.
 Now to set up the `Unity Input Manager Axis 1D Action` component to update the position of the `Sphere` GameObject when the horizontal axis changes (e.g. when we press the left/right arrow keys on the keyboard or move the left thumbstick on an Xbox controller).
 
 Click the `+` symbol in the bottom right corner of the `Value Changed` event parameter in the `Unity Input Manager Axis 1D Action` component and then drag and drop the `Sphere` GameObject into the box that appears and displays `None (Object)`.
+
+![Add Sphere To Value Changed Event](assets/images/AddSphereToValueChangedEvent.png)
 
 Select a `Function` to perform when the `Value Changed` event is emitted. For this example, select `PositionUpdater -> SetHorizontalPosition` (be sure to select `Dynamic float - SetHorizontalPosition` for this example).
 
