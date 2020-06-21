@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.14](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.2.13...v1.2.14) (2020-06-21)
+
+#### Bug Fixes
+
+* **Documentation:** apply template guidelines ([e14c759](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/e14c759494d4b503e0b909d8149312f5b2a21989))
+  > The template guidelines have been applied to this documentation and the image quality has been improved.
+
 ### [1.2.13](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.2.12...v1.2.13) (2020-06-08)
 
 #### Miscellaneous Chores
