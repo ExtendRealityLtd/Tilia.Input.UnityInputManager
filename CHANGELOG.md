@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.2.14...v1.3.0) (2020-07-03)
+
+#### Features
+
+* **API:** add auto-generated API documentation ([ba131d8](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/ba131d8b4c86a113478324f18a033ba61a4ee9b7))
+  > The API documentation is auto generated with docfx and converted to markdown via turndown in a custom nodejs script.
+
+#### Bug Fixes
+
+* **package.json:** add docfx.json file ([1b8ae27](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/1b8ae2770d9e99ac309a890cd725088b7cbacf31))
+  > The docfx.json file was missing from the package.json causing the build process to fail. It has now been added.
+
 ### [1.2.14](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.2.13...v1.2.14) (2020-06-21)
 
 #### Bug Fixes
