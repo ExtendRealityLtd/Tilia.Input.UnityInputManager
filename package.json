@@ -38,6 +38,7 @@
         "*.xml",
         "Documentation",
         "Editor",
-        "Runtime"
+        "Runtime",
+        "docfx.json"
     ]
 }
