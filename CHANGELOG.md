@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.1](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.0...v1.3.1) (2020-07-07)
+
+#### Bug Fixes
+
+* **AxisCreator:** increase sensitivity for axis 4 and 5 ([38f386d](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/38f386d0760f345e18547b3733a111f68178038e))
+  > Axis 4 and 5 generally relates to the right controller touchpad/thumbstick and if the sensitivity is too low then diagonal movement vectors seem multiplied. The Horizontal and Vertical axes have a sensitivity of `3` so this is now matching that setting.
+
 ## [1.3.0](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.2.14...v1.3.0) (2020-07-03)
 
 #### Features
