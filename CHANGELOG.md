@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.4](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.3...v1.3.4) (2020-07-11)
+
+#### Bug Fixes
+
+* **ControllerMappings:** use horizontal/vertical axis for xbox mappings ([2dafa01](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/2dafa018b66ae650f4203d76954adcb399fe7346))
+  > The Xbox controller left thumbstick works better when using the default Horizontal and Vertical axis mappings that come with Unity instead of the new custom Tilia Axis1 and Axis2 mapping so the prefab for the XBox Controller mappings have been switched back.
+
 ### [1.3.3](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.2...v1.3.3) (2020-07-11)
 
 #### Bug Fixes
