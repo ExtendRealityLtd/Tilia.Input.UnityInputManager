@@ -158,6 +158,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.Action+BooleanUnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  initialValue: 0
   defaultValue: 0
   sources: []
   Activated:
@@ -166,6 +167,11 @@ MonoBehaviour:
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ValueUnchanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
@@ -241,6 +247,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.Action+BooleanUnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  initialValue: 0
   defaultValue: 0
   sources: []
   Activated:
@@ -249,6 +256,11 @@ MonoBehaviour:
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ValueUnchanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
@@ -357,6 +369,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.Action+BooleanUnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  initialValue: 0
   defaultValue: 0
   sources: []
   Activated:
@@ -365,6 +378,11 @@ MonoBehaviour:
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ValueUnchanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
@@ -505,6 +523,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.Action+BooleanUnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  initialValue: 0
   defaultValue: 0
   sources: []
   Activated:
@@ -513,6 +532,11 @@ MonoBehaviour:
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ValueUnchanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
@@ -571,6 +595,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.Action+BooleanUnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  initialValue: 0
   defaultValue: 0
   sources: []
   Activated:
@@ -592,6 +617,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ValueUnchanged:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   Deactivated:
@@ -765,6 +795,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.Action+BooleanUnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  initialValue: 0
   defaultValue: 0
   sources: []
   Activated:
@@ -773,6 +804,11 @@ MonoBehaviour:
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ValueUnchanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
@@ -826,7 +862,7 @@ GameObject:
   - component: {fileID: 8791301091685108688}
   - component: {fileID: 2116948829538674193}
   m_Layer: 0
-  m_Name: LeftTrackpad_HorizontalAxis[horizontal]
+  m_Name: LeftTrackpad_HorizontalAxis[1]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -863,6 +899,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.Action+BooleanUnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  initialValue: 0
   defaultValue: 0
   sources: []
   Activated:
@@ -875,13 +912,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  ValueUnchanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   Deactivated:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   equalityTolerance: 1e-45
-  axisName: Horizontal
+  axisName: Tilia.Input.UnityInputManager_Axis1
   multiplier: 1
 --- !u!114 &2116948829538674193
 MonoBehaviour:
@@ -948,6 +990,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.Action+BooleanUnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  initialValue: 0
   defaultValue: 0
   sources: []
   Activated:
@@ -969,6 +1012,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ValueUnchanged:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   Deactivated:
@@ -1044,6 +1092,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.Action+BooleanUnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  initialValue: 0
   defaultValue: 0
   sources: []
   Activated:
@@ -1052,6 +1101,11 @@ MonoBehaviour:
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ValueUnchanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
@@ -1090,7 +1144,7 @@ GameObject:
   - component: {fileID: 55991596800934863}
   - component: {fileID: 2524772289165260143}
   m_Layer: 0
-  m_Name: LeftTrackpad_VerticalAxis[vertical]
+  m_Name: LeftTrackpad_VerticalAxis[2]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1127,6 +1181,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.Action+BooleanUnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  initialValue: 0
   defaultValue: 0
   sources: []
   Activated:
@@ -1139,13 +1194,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  ValueUnchanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   Deactivated:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   equalityTolerance: 1e-45
-  axisName: Vertical
+  axisName: Tilia.Input.UnityInputManager_Axis2
   multiplier: 1
 --- !u!114 &2524772289165260143
 MonoBehaviour:
@@ -1212,6 +1272,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Zinnia.Action.Action+BooleanUnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  initialValue: 0
   defaultValue: 0
   sources: []
   Activated:
@@ -1220,6 +1281,11 @@ MonoBehaviour:
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   ValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  ValueUnchanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: Zinnia.Action.BooleanAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
