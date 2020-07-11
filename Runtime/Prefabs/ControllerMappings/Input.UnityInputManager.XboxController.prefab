@@ -2143,7 +2143,7 @@ GameObject:
   - component: {fileID: 5205692975746182181}
   - component: {fileID: 2552402374990443839}
   m_Layer: 0
-  m_Name: LeftThumbstick_HorizontalAxis[1]
+  m_Name: LeftThumbstick_HorizontalAxis[Horizontal]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2204,7 +2204,7 @@ MonoBehaviour:
     m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   equalityTolerance: 1e-45
-  axisName: Tilia.Input.UnityInputManager_Axis1
+  axisName: Horizontal
   multiplier: 1
 --- !u!114 &2552402374990443839
 MonoBehaviour:
@@ -2977,7 +2977,7 @@ GameObject:
   - component: {fileID: 8511243877347990227}
   - component: {fileID: 2940380217973535806}
   m_Layer: 0
-  m_Name: LeftThumbstick_VerticalAxis[2]
+  m_Name: LeftThumbstick_VerticalAxis[Vertical]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3038,7 +3038,7 @@ MonoBehaviour:
     m_TypeName: Zinnia.Action.FloatAction+UnityEvent, Zinnia.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   equalityTolerance: 1e-45
-  axisName: Tilia.Input.UnityInputManager_Axis2
+  axisName: Vertical
   multiplier: 1
 --- !u!114 &2940380217973535806
 MonoBehaviour:
