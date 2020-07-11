@@ -44,9 +44,11 @@
         private static bool isManualCheck;
         private static Vector2 scrollPosition;
 
+        private static readonly InputAxis axis1 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis1", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 1, joyNum = 0 };
+        private static readonly InputAxis axis2 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis2", dead = 0.001f, sensitivity = 1f, snap = true, invert = true, type = AxisType.JoystickAxis, axis = 2, joyNum = 0 };
         private static readonly InputAxis axis3 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis3", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 3, joyNum = 0 };
-        private static readonly InputAxis axis4 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis4", dead = 0.001f, sensitivity = 3f, snap = true, type = AxisType.JoystickAxis, axis = 4, joyNum = 0 };
-        private static readonly InputAxis axis5 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis5", dead = 0.001f, sensitivity = 3f, snap = true, invert = true, type = AxisType.JoystickAxis, axis = 5, joyNum = 0 };
+        private static readonly InputAxis axis4 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis4", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 4, joyNum = 0 };
+        private static readonly InputAxis axis5 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis5", dead = 0.001f, sensitivity = 1f, snap = true, invert = true, type = AxisType.JoystickAxis, axis = 5, joyNum = 0 };
         private static readonly InputAxis axis6 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis6", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 6, joyNum = 0 };
         private static readonly InputAxis axis7 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis7", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 7, joyNum = 0 };
         private static readonly InputAxis axis8 = new InputAxis() { name = "Tilia.Input.UnityInputManager_Axis8", dead = 0.001f, sensitivity = 1f, snap = true, type = AxisType.JoystickAxis, axis = 8, joyNum = 0 };
@@ -75,10 +77,11 @@
                 scrollPosition = scrollViewScope.scrollPosition;
 
                 bool mappingsExist = AxisDefined(axis3.name);
-                const string mappingsNotFound = "The required Input Axis Definitions have not been found, click the 'Add Input Axis Definitions' button below to automatically created the required Input Axis Definitions.";
-                const string mappingsFound = "The required Input Axis Definitions have already been created. If you would like to delete these Input Axis Definitions then manually remove the Input axes from the Unity Input Manager found in the Unity Project Settings.";
+                const string mappingsNotFound = "The required Input Axis Definitions have not been found.\n\nClick the 'Add Input Axis Definitions' button below to automatically created the required Input Axis Definitions.";
+                const string mappingsFound = "The required Input Axis Definitions have already been created.\n\nClick the 'Delete Input Definitions' button below to delete these Input Axis Definitions.";
                 const string hideToggleLabel = "Do not prompt again.";
                 const string addMappingsButtonLabel = "Add Input Definitions";
+                const string deleteMappingsButtonLabel = "Delete Input Definitions";
                 string mappingText = mappingsExist ? mappingsFound : mappingsNotFound;
                 MessageType messageType = mappingsExist ? MessageType.Info : MessageType.Warning;
 
@@ -101,6 +104,14 @@
                                 Close();
                             }
                         }
+                        else
+                        {
+                            if (GUILayout.Button(deleteMappingsButtonLabel))
+                            {
+                                DeleteInputMappings();
+                            }
+                        }
+
                     }
 
                     if (changeCheckScope.changed)
@@ -138,10 +149,15 @@
 
         private static void AddInputMappings()
         {
-            for (int axisIndex = 3; axisIndex <= 20; axisIndex++)
+            for (int axisIndex = 1; axisIndex <= 20; axisIndex++)
             {
                 AddAxis((InputAxis)Type.GetType("Tilia.Input.UnityInputManager.UnityInputManagerAxisCreator").GetField("axis" + axisIndex, BindingFlags.NonPublic | BindingFlags.Static).GetValue(null));
             }
+        }
+
+        private static void DeleteInputMappings()
+        {
+            RemoveAllAxes();
         }
 
         private static SerializedProperty GetChildProperty(SerializedProperty parent, string name)
@@ -180,12 +196,12 @@
             }
 
             SerializedObject serializedObject = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/InputManager.asset")[0]);
-            SerializedProperty axesProperty = serializedObject.FindProperty("m_Axes");
+            SerializedProperty axesArrayProperty = serializedObject.FindProperty("m_Axes");
 
-            axesProperty.arraySize++;
+            axesArrayProperty.arraySize++;
             serializedObject.ApplyModifiedProperties();
 
-            SerializedProperty axisProperty = axesProperty.GetArrayElementAtIndex(axesProperty.arraySize - 1);
+            SerializedProperty axisProperty = axesArrayProperty.GetArrayElementAtIndex(axesArrayProperty.arraySize - 1);
 
             GetChildProperty(axisProperty, "m_Name").stringValue = axis.name;
             GetChildProperty(axisProperty, "descriptiveName").stringValue = axis.descriptiveName;
@@ -203,6 +219,23 @@
             GetChildProperty(axisProperty, "axis").intValue = axis.axis - 1;
             GetChildProperty(axisProperty, "joyNum").intValue = axis.joyNum;
 
+            serializedObject.ApplyModifiedProperties();
+        }
+
+        private static void RemoveAllAxes()
+        {
+            SerializedObject serializedObject = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/InputManager.asset")[0]);
+            SerializedProperty axesArrayProperty = serializedObject.FindProperty("m_Axes");
+
+            for (int i = axesArrayProperty.arraySize - 1; i >= 0; i--)
+            {
+                SerializedProperty axisProperty = axesArrayProperty.GetArrayElementAtIndex(i);
+                string axisName = GetChildProperty(axisProperty, "m_Name").stringValue;
+                if (axisName.Contains("Tilia.Input.UnityInputManager"))
+                {
+                    axesArrayProperty.DeleteArrayElementAtIndex(i);
+                }
+            }
             serializedObject.ApplyModifiedProperties();
         }
 
