@@ -1,5 +1,16 @@
 # Changelog
 
+### [1.3.3](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.2...v1.3.3) (2020-07-11)
+
+#### Bug Fixes
+
+* **AxisCreator:** add remove axis method and custom axis1 and axis2 ([4444968](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/4444968e2d45022f3c4649aa610f281b5d6ac5d2))
+  > The Axis Creator now has a custom axis1 and axis2 which is used by the prefabs instead of relying on the Horizontal and Vertical axes provided by Unity as these are not clean axis settings.
+  > 
+  > The AxisCreator editor window also allows deleting of existing Tilia axis inputs so its easier to upgrade.
+  > 
+  > The incorrect negative multiplier in the controller mappings has also been removed now as the inversion happens on the axis setting in the Unity Input Manager.
+
 ### [1.3.2](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.1...v1.3.2) (2020-07-11)
 
 #### Miscellaneous Chores
