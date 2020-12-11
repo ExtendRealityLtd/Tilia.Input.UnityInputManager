@@ -14,15 +14,15 @@ The [Zinnia] Actions can be used as proxies to enable chaining of Actions to all
 
 Following on from the scene created in [Using The Unity Button Action], we’re going to move the Action functionality to a Proxy Action and then chain the button press Action and keyboard Action to this newly created Proxy Action. This will move our output functionality into one place and allow us to call it from many different actions.
 
-### Prerequistes 
+### Prerequisites 
 
-* [Add the Tilia.Input.UnityInputManager.ButtonAction] prefab to the scene Hierarchy.
+* [Add the Tilia.Input.UnityInputManager -> Input.UnityInputManager.ButtonAction] prefab to the scene hierarchy.
 
 ## Let's Start
 
 ### Step 1
 
-Create an empty `GameObject` in the Unity Hierarchy and rename it to `FloorToggler` then click the `Add Component` button and select the `Boolean Action` component.
+Create an empty `GameObject` in the Unity Hierarchy window and rename it to `FloorToggler` then click the `Add Component` button and select the `Boolean Action` component.
 This newly created `Boolean Action` will be the action that defines how we toggle the active state of the `Floor` GameObject.
 
 ![Creating The Floor Toggler](assets/images/CreatingTheFloorToggler.png)
@@ -88,5 +88,6 @@ This ability to create a Proxy Action and then chain other Actions makes it poss
 Play the Unity scene and you will be able to press the Space Key to make the `Floor` GameObject disappear or you can press the Xbox Controller Button A to also make the `Floor` GameObject disappear.
 
 [Zinnia]: https://github.com/ExtendRealityLtd/Zinnia.Unity
-[Add the Tilia.Input.UnityInputManager.ButtonAction]: ../UsingTheUnityButtonAction/README.md
+[Using The Unity Button Action]: ../UsingTheUnityButtonAction/README.md
+[Add the Tilia.Input.UnityInputManager -> Input.UnityInputManager.ButtonAction]: ../UsingTheUnityButtonAction/README.md
 [Step 2]: #Step-2

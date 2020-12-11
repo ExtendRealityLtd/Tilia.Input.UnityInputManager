@@ -31,7 +31,7 @@ This will form the basic floor of the scene world and provide a way of testing a
 
 ### Step 2
 
-Expand the `Tilia Input UnityInputManager` Package directory in the Unity Project window and select then `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Actions` directory then drag and drop the `Input.UnityInputManager.ButtonAction` prefab into the Hierarchy window.
+Expand the `Tilia Input UnityInputManager` package directory in the Unity Project window and select then `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Actions` directory then drag and drop the `Input.UnityInputManager.ButtonAction` prefab into the Unity Hierarchy window.
 
 > Be sure to use the `Input.UnityInputManager.ButtonAction` prefab and not just add the `Unity Input Manager Button Action` component to a GameObject as the component needs linking to a `MomentProcessor` to function.
 
@@ -39,7 +39,7 @@ Expand the `Tilia Input UnityInputManager` Package directory in the Unity Projec
 
 ### Step 3
 
-Select the `Input.UnityInputManager.ButtonAction` GameObject in the Hierarchy window and change the `Key Code` parameter on the `Unity Input Manager Button Action` component to listen for the desired key press, in this case select `Space` to listen for the press of the Spacebar on the keyboard.
+Select the `Input.UnityInputManager.ButtonAction` GameObject in the Unity Hierarchy window and change the `Key Code` parameter on the `Unity Input Manager Button Action` component to listen for the desired key press, in this case select `Space` to listen for the press of the Spacebar on the keyboard.
 
 ![Change KeyCode To Space](assets/images/ChangeKeyCodeToSpace.png)
 
@@ -75,7 +75,7 @@ Play the Unity scene and press the Spacebar on the keyboard and the `Floor` Game
 
 Let's use one the `Controller Mapping` prefabs to do the same action as outlined above but based on a controller press.
 
-Expand the `Tilia Input UnityInputManager` Package directory in the Unity Project window and select then `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Controller Mappings` directory then drag and drop the `Input.UnityInputManager.XboxController` prefab into the Hierarchy window.
+Expand the `Tilia Input UnityInputManager` Package directory in the Unity Project window and select then `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Controller Mappings` directory then drag and drop the `Input.UnityInputManager.XboxController` prefab into the Unity Hierarchy window.
 
 ![Drag Xbox Controller Mapping To Hierarchy](assets/images/DragXboxControllerMappingToHierarchy.png)
 
