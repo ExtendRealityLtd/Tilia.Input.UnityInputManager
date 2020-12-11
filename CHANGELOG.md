@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.11](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.10...v1.3.11) (2020-12-11)
+
+#### Bug Fixes
+
+* **HowToGuides:** apply document styling guidelines ([db15d1f](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/db15d1f8bda19ed5c6d64238376eb0af09beb803))
+  > The document style guidelines have been updated and now have been applied to the guides in this repo.
+
 ### [1.3.10](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.9...v1.3.10) (2020-11-01)
 
 #### Miscellaneous Chores
