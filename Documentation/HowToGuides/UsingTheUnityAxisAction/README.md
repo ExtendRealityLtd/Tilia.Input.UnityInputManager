@@ -28,7 +28,7 @@ We will utilize a 1D axis action to control the position of this sphere in the s
 
 ### Step 2
 
-Expand the `Tilia Input UnityInputManager` Package directory in the Unity Project window and select then `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Actions` directory then drag and drop the `Input.UnityInputManager.1DAxisAction` prefab into the Hierarchy window.
+Expand the `Tilia Input UnityInputManager` package directory in the Unity Project window and select then `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Actions` directory then drag and drop the `Input.UnityInputManager.1DAxisAction` prefab into the Unity Hierarchy window.
 
 > Be sure to use the `Input.UnityInputManager.1DAxisAction` prefab and not just add the `Unity Input Manager Axis 1D Action` component to a GameObject as the component needs linking to a `MomentProcessor` to function.
 
@@ -42,7 +42,7 @@ There are many different supported axes depending on the input peripheral being 
 
 The Unity software also has 2 default axis values called `Horizontal` and `Vertical` which map to the arrows on the keyboard and the standard joystick movement of an input peripheral.
 
-Select the `Input.UnityInputManager.1DAxisAction` GameObject in the Hierarchy window and update the `Axis Name` parameter on the `Unity Input Manager Axis 1D Action` component to listen changes on the specified axis, in this case type `Horizontal` to listen for changes on the default horizontal axis definition within the Unity Input Manager definitions.
+Select the `Input.UnityInputManager.1DAxisAction` GameObject in the Unity Hierarchy window and update the `Axis Name` parameter on the `Unity Input Manager Axis 1D Action` component to listen changes on the specified axis, in this case type `Horizontal` to listen for changes on the default horizontal axis definition within the Unity Input Manager definitions.
 
 ![Change Axis Name To Horizontal](assets/images/ChangeAxisNameToHorizontal.png)
 

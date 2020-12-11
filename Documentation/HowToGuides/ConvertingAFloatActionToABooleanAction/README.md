@@ -30,7 +30,7 @@ Create a new `Cube` Unity 3D Object by selecting `Main Menu -> GameObject -> 3D 
 
 ### Step 2
 
-Expand the `Tilia Input UnityInputManager` Package directory in the Unity Project window and select then `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Actions` directory then drag and drop the `Input.UnityInputManager.Axis1DAction` prefab into the Hierarchy window.
+Expand the `Tilia Input UnityInputManager` package directory in the Unity Project window and select then `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Actions` directory then drag and drop the `Input.UnityInputManager.Axis1DAction` prefab into the Unity Hierarchy window.
 
 > Be sure to use the `Input.UnityInputManager.Axis1DAction` prefab and not just add the `Unity Input Manager Axis 1D Action` component to a GameObject as the component needs linking to a `MomentProcessor` to function.
 
@@ -38,7 +38,7 @@ Expand the `Tilia Input UnityInputManager` Package directory in the Unity Projec
 
 ### Step 3
 
-Select the `Input.UnityInputManager.Axis1DAction` GameObject in the Hierarchy window and change the `Axis Name` parameter on the `Unity Input Manager Axis 1D Action` component to listen for the desired axis, in this case enter `Tilia.Input.UnityInputManager_Axis9` to listen for the Left Trigger axis on an Xbox Controller.
+Select the `Input.UnityInputManager.Axis1DAction` GameObject in the Unity Hierarchy window and change the `Axis Name` parameter on the `Unity Input Manager Axis 1D Action` component to listen for the desired axis, in this case enter `Tilia.Input.UnityInputManager_Axis9` to listen for the Left Trigger axis on an Xbox Controller.
 
 ![Change Axis Name To Axis9](assets/images/ChangeAxisNameToAxis9.png)
 
