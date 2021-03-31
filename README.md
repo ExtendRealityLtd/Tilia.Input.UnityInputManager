@@ -1,7 +1,7 @@
 [![Tilia logo][Tilia-Image]](#)
 
 > ### Input -> Unity Input Manager
-> Input wrappers for the Unity Input Manager and a collection of common input prefabs.
+> Input wrappers for the legacy Unity Input Manager and a collection of common input prefabs.
 
 [![Release][Version-Release]][Releases]
 [![License][License-Badge]][License]
@@ -9,7 +9,7 @@
 
 ## Introduction
 
-The UnityInputManager package provides a collection of [Zinnia] Actions that wrap [Unity] inputs from the [Unity Input Manager]. These Actions can be used to map keyboard/button presses or axis data via the Unity Input Manager.
+The Unity Input Manager package provides a collection of [Zinnia] Actions that wrap [Unity] inputs from the legacy [Unity Input Manager]. These Actions can be used to map keyboard/button presses or axis data via the Unity Input Manager.
 
 A collection of useful prefabs are also provided with pre-defined button and axis mappings for common controller types:
 
@@ -20,6 +20,8 @@ A collection of useful prefabs are also provided with pre-defined button and axi
 * Windows Mixed Reality controller
 
 This package will also prompt to create any required and missing Unity Input Manager axes.
+
+The new [Unity Input System] is available in Unity `2019.1.0f1` and to use that instead then see the [Tilia.Input.UnityInputSystem] repository.
 
 > **Requires** the Unity software version `2018.3.10f1` (or above).
 
@@ -63,3 +65,5 @@ Code released under the [MIT License][License].
 [Zinnia]: https://github.com/ExtendRealityLtd/Zinnia.Unity
 [Unity]: https://unity3d.com/
 [Unity Input Manager]: https://docs.unity3d.com/Manual/class-InputManager.html
+[Unity Input System]: https://docs.unity3d.com/Manual/com.unity.inputsystem.html
+[Tilia.Input.UnityInputSystem]: https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputSystem
