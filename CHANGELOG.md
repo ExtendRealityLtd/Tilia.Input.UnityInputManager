@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.20](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.19...v1.3.20) (2021-03-31)
+
+#### Bug Fixes
+
+* **README.md:** update to mention newer Unity Input System package ([0e062dc](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/0e062dc8abfe7dc9b11541a9b488d72d3961e0ca))
+  > Since the Unity Input Manager is being deprecated, it is prudent to mention the new Unity Input System package which sits on top of the new Unity Input System in Unity 2019.1.
+
 ### [1.3.19](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.18...v1.3.19) (2021-03-29)
 
 #### Miscellaneous Chores
