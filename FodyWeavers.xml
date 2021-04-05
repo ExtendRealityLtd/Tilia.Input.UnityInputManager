@@ -2,6 +2,6 @@
 
 <Weavers>
   <Malimbe.FodyRunner>
-    <AssemblyNameRegex>^Tilia</AssemblyNameRegex>
+    <AssemblyNameRegex>^Tilia.Input.UnityInputManager</AssemblyNameRegex>
   </Malimbe.FodyRunner>
 </Weavers>

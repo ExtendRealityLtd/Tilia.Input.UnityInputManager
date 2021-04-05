@@ -1,6 +1,8 @@
 {
     "name": "Tilia.Input.UnityInputManager.Editor",
-    "references": [],
+    "references": [
+        "Zinnia.Editor"
+    ],
     "optionalUnityReferences": [],
     "includePlatforms": [
         "Editor"
