@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.20...v1.4.0) (2021-04-07)
+
+#### Features
+
+* **Utility:** add prefab creator ([9442303](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/9442303c9a3ea1aa38b1571670ac92a45fb1a029))
+  > The latest version of Zinnia has the basis of a prefab creator that can be used to enable easy adding of prefabs to a scene without needing to drag and drop from directories. Instead a new menu item is added for quickly adding prefabs. The guide has been updated to accommodate this and the FodyWeavers.xml is now located in the root to serve both the Runtime and Editor scripts.
+
 ### [1.3.20](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.19...v1.3.20) (2021-03-31)
 
 #### Bug Fixes
