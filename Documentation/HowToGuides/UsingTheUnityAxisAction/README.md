@@ -28,11 +28,9 @@ We will utilize a 1D axis action to control the position of this sphere in the s
 
 ### Step 2
 
-Expand the `Tilia Input UnityInputManager` package directory in the Unity Project window and select then `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Actions` directory then drag and drop the `Input.UnityInputManager.1DAxisAction` prefab into the Unity Hierarchy window.
+Add a `Input.UnityInputManager.Axis1DAction` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Input -> UnityInputManager -> Actions -> Input.UnityInputManager.Axis1DAction` from the Unity main top menu.
 
-> Be sure to use the `Input.UnityInputManager.1DAxisAction` prefab and not just add the `Unity Input Manager Axis 1D Action` component to a GameObject as the component needs linking to a `MomentProcessor` to function.
-
-![Drag 1D AxisAction To Hierarchy](assets/images/Drag1DAxisActionToHierarchy.png)
+> Be sure to use the `Input.UnityInputManager.Axis1DAction` prefab and not just add the `Unity Input Manager Axis 1D Action` component to a GameObject as the component needs linking to a `MomentProcessor` to function.
 
 ### Step 3
 

@@ -31,11 +31,9 @@ This will form the basic floor of the scene world and provide a way of testing a
 
 ### Step 2
 
-Expand the `Tilia Input UnityInputManager` package directory in the Unity Project window and select then `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Actions` directory then drag and drop the `Input.UnityInputManager.ButtonAction` prefab into the Unity Hierarchy window.
+Add a `Input.UnityInputManager.ButtonAction` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Input -> UnityInputManager -> Actions -> Input.UnityInputManager.ButtonAction` from the Unity main top menu.
 
 > Be sure to use the `Input.UnityInputManager.ButtonAction` prefab and not just add the `Unity Input Manager Button Action` component to a GameObject as the component needs linking to a `MomentProcessor` to function.
-
-![Drag ButtonAction To Hierarchy](assets/images/DragButtonActionToHierarchy.png)
 
 ### Step 3
 
@@ -75,9 +73,7 @@ Play the Unity scene and press the Spacebar on the keyboard and the `Floor` Game
 
 Let's use one the `Controller Mapping` prefabs to do the same action as outlined above but based on a controller press.
 
-Expand the `Tilia Input UnityInputManager` Package directory in the Unity Project window and select then `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Controller Mappings` directory then drag and drop the `Input.UnityInputManager.XboxController` prefab into the Unity Hierarchy window.
-
-![Drag Xbox Controller Mapping To Hierarchy](assets/images/DragXboxControllerMappingToHierarchy.png)
+Add a `Input.UnityInputManager.XboxController` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Input -> UnityInputManager -> ControllerMappings -> Input.UnityInputManager.XboxController` from the Unity main top menu.
 
 ### Step 7
 
