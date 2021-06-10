@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.4.3](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.4.2...v1.4.3) (2021-06-10)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.zinnia.unity from 1.36.0 to 1.36.1 ([6a09fca](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/6a09fca8e6d32a242265735d53ba7eab087127f7))
+  > Bumps [io.extendreality.zinnia.unity](https://github.com/ExtendRealityLtd/Zinnia.Unity) from 1.36.0 to 1.36.1. - [Release notes](https://github.com/ExtendRealityLtd/Zinnia.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Zinnia.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Zinnia.Unity/compare/v1.36.0...v1.36.1)
+* **README.md:** update title logo to related-media repo ([dfb4a3e](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/dfb4a3e2955bcc32793ede75a1e3abae3616082c))
+  > The title logo is now located on the related-media repo.
+
 ### [1.4.2](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.4.1...v1.4.2) (2021-05-09)
 
 #### Miscellaneous Chores
