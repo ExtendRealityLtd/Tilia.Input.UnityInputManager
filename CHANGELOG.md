@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.4.9](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.4.8...v1.4.9) (2021-12-06)
+
+#### Bug Fixes
+
+* **AxisCreator:** prevent null exception if no axis found ([529532c](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/529532c7d1f7b9748b84e0dccd81511c7740f1c0))
+  > There was an issue when no axis was found it would throw a null exception as the `Next` call would try and iterate through to a null element. This is resolved by just using the resulting bool from the `Next` call to ensure whether it can proceed wit the additional check.
+
 ### [1.4.8](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.4.7...v1.4.8) (2021-12-03)
 
 #### Miscellaneous Chores
