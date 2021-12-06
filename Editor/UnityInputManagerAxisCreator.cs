@@ -182,8 +182,10 @@
             while (axesProperty.Next(false))
             {
                 SerializedProperty axis = axesProperty.Copy();
-                axis.Next(true);
-                if (axis.stringValue == axisName) return true;
+                if (axis.Next(true))
+                {
+                    if (axis.stringValue == axisName) return true;
+                }
             }
             return false;
         }
