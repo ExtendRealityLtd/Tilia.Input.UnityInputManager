@@ -1,7 +1,5 @@
 ﻿namespace Tilia.Input.UnityInputManager
 {
-    using Malimbe.PropertySerializationAttribute;
-    using Malimbe.XmlDocumentationAttribute;
     using UnityEngine;
     using Zinnia.Action;
     using Zinnia.Process;
@@ -11,18 +9,40 @@
     /// </summary>
     public class UnityInputManagerAxis1DAction : FloatAction, IProcessable
     {
+        [Tooltip("The named axis to listen for state changes on.")]
+        [SerializeField]
+        private string axisName;
         /// <summary>
         /// The named axis to listen for state changes on.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public string AxisName { get; set; }
+        public string AxisName
+        {
+            get
+            {
+                return axisName;
+            }
+            set
+            {
+                axisName = value;
+            }
+        }
+        [Tooltip("Multiplies the axis value.")]
+        [SerializeField]
+        private float multiplier = 1f;
         /// <summary>
         /// Multiplies the axis value.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public float Multiplier { get; set; } = 1f;
+        public float Multiplier
+        {
+            get
+            {
+                return multiplier;
+            }
+            set
+            {
+                multiplier = value;
+            }
+        }
 
         /// <inheritdoc />
         public void Process()

@@ -1,7 +1,5 @@
 ﻿namespace Tilia.Input.UnityInputManager
 {
-    using Malimbe.PropertySerializationAttribute;
-    using Malimbe.XmlDocumentationAttribute;
     using UnityEngine;
     using Zinnia.Action;
     using Zinnia.Process;
@@ -11,12 +9,23 @@
     /// </summary>
     public class UnityInputManagerButtonAction : BooleanAction, IProcessable
     {
+        [Tooltip("The KeyCode to listen for state changes on.")]
+        [SerializeField]
+        private KeyCode keyCode;
         /// <summary>
         /// The <see cref="UnityEngine.KeyCode"/> to listen for state changes on.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public KeyCode KeyCode { get; set; }
+        public KeyCode KeyCode
+        {
+            get
+            {
+                return keyCode;
+            }
+            set
+            {
+                keyCode = value;
+            }
+        }
 
         /// <inheritdoc />
         public void Process()
