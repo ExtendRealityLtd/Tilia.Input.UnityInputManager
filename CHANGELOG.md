@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v2.0.8...v2.1.0) (2023-03-11)
+
+#### Features
+
+* **state:** add ifdefs to determine whether input manager is enabled ([b375e53](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/b375e533a3a5c0d915fa4fbeb511427dfd83f3b9))
+  > The relevant input manager code is now wrapped in ifdefs to only run if the Unity Input Manager is enabled and therefore will provide a warning if the code is run when it is not enabled.
+
 ### [2.0.8](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v2.0.7...v2.0.8) (2023-03-11)
 
 #### Miscellaneous Chores
