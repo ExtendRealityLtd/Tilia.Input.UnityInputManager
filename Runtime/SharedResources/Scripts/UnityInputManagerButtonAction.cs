@@ -30,7 +30,11 @@
         /// <inheritdoc />
         public void Process()
         {
+#if ENABLE_LEGACY_INPUT_MANAGER
             Receive(Input.GetKey(KeyCode));
+#else
+            Debug.LogWarning("The Legacy Unity Input Manager is disabled in the player settings.");
+#endif
         }
     }
 }
