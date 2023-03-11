@@ -47,7 +47,11 @@
         /// <inheritdoc />
         public void Process()
         {
+#if ENABLE_LEGACY_INPUT_MANAGER
             Receive(Input.GetAxis(AxisName) * Multiplier);
+#else
+            Debug.LogWarning("The Legacy Unity Input Manager is disabled in the player settings.");
+#endif
         }
     }
 }
