@@ -1,5 +1,14 @@
 # Changelog
 
+### [2.1.2](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v2.1.1...v2.1.2) (2023-03-14)
+
+#### Bug Fixes
+
+* **state:** only apply ifdef on Unity 2019.2 or newer ([198dd16](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/commit/198dd16c5a3b95ad955d615c183768890d99a780))
+  > The ENABLE_LEGACY_INPUT_MANAGER was only added in Unity 2019.2 so any version before that won't understand the ifdef and therefore just output the debug warning.
+  > 
+  > This fix wraps that whole block in a check to see if Unity 2019.2 or newer is being used, if its not then it just does the default process and if the user is using the new Input System but has this package installed then they won't get any debug warnings, but as this is based on such an old version of unity then this is acceptable.
+
 ### [2.1.1](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v2.1.0...v2.1.1) (2023-03-13)
 
 #### Miscellaneous Chores
